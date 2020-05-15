@@ -1,0 +1,42 @@
+{
+  "name": "display-element-switch",
+  "version": "1.0.0",
+  "description": "display-element-switch 实现了开关显示一个元素的逻辑，可用于全局的loading提示等",
+  "main": "dist/display-element-switch.cjs.js",
+  "module": "dist/display-element-switch.esm.js",
+  "types": "types/index.d.ts",
+  "sideEffects": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GuoBinyong/display-element-switch"
+  },
+  "keywords": [
+    "前端库",
+    "web库",
+    "library",
+    "rollup 模板",
+    "公共代码"
+  ],
+  "author": "郭斌勇",
+  "license": "ISC",
+  "files": [
+    "dist/[^.]*",
+    "types/[^.]*"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "node test/test.js",
+    "pretest": "npm run build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "@rollup/plugin-node-resolve": "^7.1.3",
+    "es-expand": "^1.0.11",
+    "eslint": "^7.0.0",
+    "rollup": "^2.7.2",
+    "rollup-plugin-babel": "^4.2.0"
+  }
+}
