@@ -26,7 +26,7 @@ export default class ElementDisplaySwitch {
   get container(){
     if  (!this._container){
       var _container = document.createElement("div");
-      _container.className = "display-element-switch";
+      _container.className = "element-display-switch";
       _container.style.display = "none";
       this._container = _container;
     }

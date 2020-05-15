@@ -1,14 +1,14 @@
 {
-  "name": "display-element-switch",
+  "name": "element-display-switch",
   "version": "1.0.0",
-  "description": "display-element-switch 实现了开关显示一个元素的逻辑，可用于全局的loading提示等",
-  "main": "dist/display-element-switch.cjs.js",
-  "module": "dist/display-element-switch.esm.js",
+  "description": "element-display-switch 实现了开关显示一个元素的逻辑，可用于全局的loading提示等",
+  "main": "dist/element-display-switch.cjs.js",
+  "module": "dist/element-display-switch.esm.js",
   "types": "types/index.d.ts",
   "sideEffects": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/GuoBinyong/display-element-switch"
+    "url": "https://github.com/GuoBinyong/element-display-switch"
   },
   "keywords": [
     "前端库",
