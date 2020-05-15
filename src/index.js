@@ -1,13 +1,13 @@
 /**
- * DisplayElementSwitch 封装实现了开关显示一个元素的逻辑，可用于全局的loading提示等；
+ * ElementDisplaySwitch 封装实现了开关显示一个元素的逻辑，可用于全局的loading提示等；
  */
-export default class DisplayElementSwitch {
+export default class ElementDisplaySwitch {
 
 
   /**
-   * @param props ?: DisplayElementSwitchProps    配置 DisplayElementSwitch 实例属性的对象；
+   * @param props ?: ElementDisplaySwitchProps    配置 ElementDisplaySwitch 实例属性的对象；
    *
-   * DisplayElementSwitchProps = {ele,duration,getOffset,updateOptions}
+   * ElementDisplaySwitchProps = {ele,duration,getOffset,updateOptions}
    */
   constructor(props){
     Object.assign(this,props);
@@ -44,7 +44,7 @@ export default class DisplayElementSwitch {
 
 
   /**
-   * getOffset : (showOptions,container,displayElementSwitch)=>OffsetStyle
+   * getOffset : (showOptions,container,elementDisplaySwitch)=>OffsetStyle
    * OffsetStyle = {left:string, right:string, top:string, bottom:string}
    */
   getOffset;
@@ -121,7 +121,7 @@ export default class DisplayElementSwitch {
   /**
    * 挂载 容器元素 container 到 ele 上；即将 容器元素 追加为 ele 的子元素
    * @param ele ?: Ele    可选；挂载 容器元素 container 的元素;
-   * @return {DisplayElementSwitch}
+   * @return {ElementDisplaySwitch}
    */
   mount(ele){
     if (arguments.length > 0){
@@ -141,7 +141,7 @@ export default class DisplayElementSwitch {
 
   /**
    * 在调用 show 之前，一定要配置该属性；
-   * updateOptions : (showOptions,container,displayElementSwitch)=>Void
+   * updateOptions : (showOptions,container,elementDisplaySwitch)=>Void
    */
   updateOptions;
 
@@ -150,7 +150,7 @@ export default class DisplayElementSwitch {
    * 显示
    * @param showOpts ? : ShowOptions  显示选项
    *
-   * ShowOptions = {...DisplayElementSwitchProps,...自定义选项}
+   * ShowOptions = {...ElementDisplaySwitchProps,...自定义选项}
    */
   show(showOpts){
     Object.assign(this,showOpts);
@@ -163,7 +163,7 @@ export default class DisplayElementSwitch {
     if (typeof this.updateOptions === "function"){
       this.updateOptions(showOpts,container,this);
     }else {
-      console.warn("没有给 DisplayElementSwitch 实例设置正确的 updateOptions 属性值，updateOptions属性期望一个 (showOptions:ShowOptions,container:HTMLDivElement,displayElementSwitch:DisplayElementSwitch)=>void 类型的函数值");
+      console.warn("没有给 ElementDisplaySwitch 实例设置正确的 updateOptions 属性值，updateOptions属性期望一个 (showOptions:ShowOptions,container:HTMLDivElement,elementDisplaySwitch:ElementDisplaySwitch)=>void 类型的函数值");
     }
 
 
