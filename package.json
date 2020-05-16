@@ -11,17 +11,20 @@
     "url": "https://github.com/GuoBinyong/element-display-switch"
   },
   "keywords": [
-    "前端库",
-    "web库",
-    "library",
-    "rollup 模板",
-    "公共代码"
+    "element display switch",
+    "display",
+    "switch",
+    "元素",
+    "显示",
+    "开关",
+    "元素显示开关"
   ],
   "author": "郭斌勇",
   "license": "ISC",
   "files": [
     "dist/[^.]*",
-    "types/[^.]*"
+    "types/[^.]*",
+    "*.css"
   ],
   "scripts": {
     "build": "rollup -c",
@@ -31,6 +34,15 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/plugin-proposal-export-namespace-from": "^7.8.3",
+    "@babel/plugin-proposal-function-sent": "^7.8.3",
+    "@babel/plugin-proposal-json-strings": "^7.8.3",
+    "@babel/plugin-proposal-numeric-separator": "^7.8.3",
+    "@babel/plugin-proposal-throw-expressions": "^7.8.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-syntax-import-meta": "^7.8.3",
     "@babel/preset-env": "^7.9.5",
     "@rollup/plugin-commonjs": "^11.1.0",
     "@rollup/plugin-node-resolve": "^7.1.3",
